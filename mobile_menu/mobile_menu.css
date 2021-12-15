@@ -2,7 +2,17 @@ body {
     font-family: "TT Lakes", serif;
 }
 
-.lt-container {
+a {
+    text-decoration: none;
+    color: #1B1C21;
+    cursor: pointer;
+}
+
+a:hover, button:hover {
+    opacity: 0.6;
+}
+
+.mobile_menu {
     position: relative;
     top:0;
     left:0;
@@ -20,22 +30,22 @@ body {
     display: flex;
 }
 
-.header_lt-left {
+.header__lt-left {
     width: 60%;
     padding-top: 20px;
 }
 
-.header_lt-right {
+.header__lt-right {
     width: 40%;
     padding-top: 20px;
 }
 
-.header_left-side {
+.header__left-side {
     display: flex;
     align-items: center;
 }
 
-.header_mobile-burger {
+.header__mobile-burger {
     min-height: 40px;
     min-width: 40px;
     border-radius: 1.5em;
@@ -43,61 +53,59 @@ body {
     margin-right: 17px;
 }
 
-.header_mobile-logo {
+.header__mobile-logo {
     min-width: 100px;
     min-height: 50px;
     background: url("../icons/logo.png") no-repeat center;
 }
 
-.header_right-side {
+.header__right-side {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-.header_mobile-search {
+.header__mobile-search {
     min-height: 40px;
     min-width: 40px;
     border-radius: 1.5em;
     background: #FF3E79 url("../icons/search.png") no-repeat center;
 }
 
+button {
+    border: none;
+}
+
 .menu {
     height: 680px;
 }
 
-.lt-menu {
+.menu__lt {
     height: 90%;
 }
 
-.menu_list {
+.menu__list {
     list-style: none;
     padding: 35px 0 0 0;
     margin:0;
 }
 
-.menu_list a {
+.menu__list a {
     position: relative;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     display: block;
-    text-decoration: none;
-    color: #1B1C21;
     padding: 16px 0;
     transition-duration: 0.6s;
 }
 
-.menu_list a:hover {
+.menu__list--active {
     opacity: 0.6;
 }
 
-.active {
-    opacity: 0.6;
-}
-
-.menu_list .active::before {
+.menu__list .menu__list--active::before {
     position:absolute;
     top:23px;
     left: -40px;
@@ -109,13 +117,13 @@ body {
     border-radius: 7px 7px 0 0;
 }
 
-.footer_buttons {
+.footer__buttons {
     display: flex;
     align-items: center;
     padding: 10px 0;
 }
 
-.footer_phone-button {
+.footer__phone-button {
     min-height: 40px;
     min-width: 40px;
     border-radius: 1.5em;
@@ -123,7 +131,7 @@ body {
     margin-right: 17px;
 }
 
-.footer_chat-button {
+.footer__chat-button {
     min-height: 40px;
     min-width: 40px;
     border-radius: 1.5em;
@@ -131,33 +139,31 @@ body {
     margin-right: 17px;
 }
 
-.footer_profile-button {
+.footer__profile-button {
     min-height: 40px;
     min-width: 40px;
     border-radius: 1.5em;
     background: #FF3E79 url("../icons/profile.png") no-repeat center;
 }
 
-.footer_email {
+.footer__email {
     padding: 10px 0;
 }
 
-.footer_phone-numb {
+.footer__phone-numb {
     font-size: 24px;
     font-weight: bold;
     padding: 10px 0;
 }
 
-.footer_languages {
+.footer__languages {
     padding: 32px 0;
 }
 
-.footer_languages a {
-    text-decoration: none;
-    color: #1B1C21;
+.footer__languages a {
     margin-right: 5px;
 }
 
-.active-language {
+.footer__active--language {
     opacity: 0.6;
 }
